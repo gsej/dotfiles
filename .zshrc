@@ -110,3 +110,5 @@ alias vi=nvim
 alias vim=nvim
 alias notes='/usr/bin/code -n ~/repos/notes/'
 alias cnotes='/usr/bin/code -n ~/repos/ceracare/cera-notes/'
+
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
