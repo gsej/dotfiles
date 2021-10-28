@@ -2,12 +2,21 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/gsej/.oh-my-zsh"
-export PATH="$PATH:/root/.dotnet/tools"
 
+export PAT="7p2tcg2ewlcp5y2bozxvad5tulyemxr6tkncofjjq4seoftbm5ba"
+
+export Features__Jwt__Secret='kgTSUHFJx!fxA8PMP58mZMcrzK4#BZ%?r%M*^e9bB5q=C9j=!U9emV3JEuJ-Mv8!MEEWz^VG98KffVtVYtXUTURn94H&axTTqC&C+@B6anUr!Le25uC3=emn-=t+@#E+rymK5jfkL_=tRe%KPkaKeWAab-$x?YayW@GBA+4Q$r^xG$k?#qbWSZn=N#S+2=XBH^GQuMAa#Q#crx7A2+Gx*9?_f-yH=nEa-!%jv77N8YYxk-KfS3=qs=h%-beU#Mjb'
+
+
+export ZSH="/home/gsej/.oh-my-zsh"
+export PATH="$PATH:/home/gsej/.dotnet/tools"
+
+export PATH="$PATH:/root/.dotnet/tools"
+export PATH="$PATH:/home/gsej/bin"
+export PATH="$PATH:/home/gsej/repos/ceracare/emars-api/scripts"
 
 setopt auto_cd
-export cdpath=($HOME/repos)
+export cdpath=($HOME/repos $HOME/repos/ceracare)
 
 eval `ssh-agent`
 
@@ -112,3 +121,5 @@ alias notes='/usr/bin/code -n ~/repos/notes/'
 alias cnotes='/usr/bin/code -n ~/repos/ceracare/cera-notes/'
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+alias ri='nohup rider *.sln &'
